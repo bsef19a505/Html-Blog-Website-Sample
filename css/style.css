@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+:root {
+    --bg-size: 100% 100%;
+    --main-color: #fff;
+    --title: 'Lato', sans-serif;
+    --btn-font:2.5rem
+    --btn-color: #bbe1fa;
+    --btn-font-color: #000;
+    --font-para: 'Lato', sans-serif;
+    --eff: .3s all ease;
+}
+
+
+*{
+    font-family: var(--font-para);
+    
+}
+html{
+    font-size: 62.5%;
+}
+p,label,input::placeholder{
+    line-height: 170%;
+    font-size: 1.9rem;
+    color: #6c757d;
+}
+figure img,.fab,.fas{
+    transition: var(--eff);
+}
+a,a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+body{
+    background: (84,3%,94%);
+}
+.main_heading{
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 5rem;
+    color: #000;
+}
+.main_heading__para{
+    font-size: 2.2rem;
+}
+.main_header_div{
+    height: 400px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.8)50%,rgba(0,0,0,0)),url("https://thereceptionist.com/wp-content/uploads/2018/11/FEATURED-How-Much-Office-Space-Do-You-Really-Need-930x522.jpeg");
+    background-size: var(--bg-size);
+    padding-left: 15px;
+}
+.main_header_div p{
+    font-weight: bold;
+    font-family: var(--title);
+    font-size: 3.5rem;
+    color: var(--main-color);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    
+}
+.main_header_div h2{
+    font-weight: bold;
+    font-family: var(--title);
+    font-size: 6.5rem;
+    color: var(--main-color);
+    padding-bottom: 2rem;
+    position: relative;
+}
+.main_header_div span{
+    font-family: var(--title);
+}
+.animateWords div li{
+    font-weight: bold;
+    height: 4.5rem;
+    padding: 0 1rem;
+    margin-bottom: 4.5rem;
+    display: block;
+    font-family: var(--title);
+}
+.animateWords div{
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 9.5rem;
+    padding-top: 1rem;
+    margin-top: -1rem;
+}
+.flip{
+    -webkit-animation: flip4 4s cubic-bezier(0.23,1,0.32,1.2) infinite;
+    animation: flip4 4s cubic-bezier(0.23,1,0.32,1.2) infinite;
+}
+@-webkit-keyframes flip4{
+    0%{
+        margin-top: -360px;
+    }
+    5%{
+        margin-top: -270px;
+    }
+    25%{
+        margin-top: -270px;
+    }
+    30%{
+        margin-top: -180px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    55%{
+        margin-top: -90px;
+    }
+    75%{
+        margin-top: -90px;
+    }
+    80%{
+        margin-top: 0px;
+    }
+    99.99%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -270px;
+    }
+}
+@keyframes flip4 {
+    0%{
+        margin-top: -360px;
+    }
+    5%{
+        margin-top: -270px;
+    }
+    25%{
+        margin-top: -270px;
+    }
+    30%{
+        margin-top: -180px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    55%{
+        margin-top: -90px;
+    }
+    75%{
+        margin-top: -90px;
+    }
+    80%{
+        margin-top: 0px;
+    }
+    99.99%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: -270px;
+    }
+}
+.main_header_div button{
+    color: var(--btn-font-color);
+    border-width: 0;
+    font-size: 1.5rem;
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: #bbe1fa;
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
+.main_header_div button:hover,
+figure img:hover,
+.left_div__reply:hover,
+.left_div__like:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 3rem -1rem rgba(255,255,255,0.7);
+}
+.blog_left__div h1{
+    font-weight: bold;
+    font-family: var(--title);
+    font-size: 3.5rem;
+}
+.blog_left__div .blog_title{
+    font-weight: 400;
+    font-family: var(--title);
+    font-size: 1.8rem;
+}
+.blog_left__div .blog_title span{
+    color: #1b262c;
+}
+figure{
+    align-items: center;
+    justify-content: center;
+}
+figure img{
+    width: 876px;
+}
+.blog_left__div p span{
+    color: #1b262c;
+}
+.left_div__btn{
+    margin-top: 3rem;
+    transition: var(--eff);
+}
+.left_div__like{
+    color: var(--btn-font-color);
+    border-width: .2rem;
+    font-size: 1.5rem;
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: #bbe1fa;
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+}
+.left_div__reply{
+    color: var(--btn-font-color);
+    /* border-width: .2rem; */
+    font-size: 1.5rem;
+    transition: var(--eff);
+    padding: .8rem 2rem;
+    background-color: #bbe1fa;
+    border-color: var(--btn-color);
+    font-family: var(--title);
+    outline: none;
+    border: none;
+}
+.reply{
+    mar
+}
