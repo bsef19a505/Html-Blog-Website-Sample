@@ -222,5 +222,14 @@ figure img{
     border: none;
 }
 .reply{
-    mar
+    margin: 2rem 0;
+    padding: 1rem 0;
+    transition: var(--eff);
+    display: none;
+
+}
+.show{
+    margin: 20px 0;
+    transition: var(--eff);
+    display: block;
 }
